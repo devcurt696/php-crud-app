@@ -1,2 +1,2 @@
 # php-crud-app
-CRUD app with PHP
+CRUD app with PHP, Jquery validation library, css, and HTML
