@@ -83,6 +83,12 @@ main a{
 	
 }
 
+.item_small .item_country{
+	font-size: 18px;
+	color:#000;
+
+}
+
 .item_small a{
 	font-size: 14px;
 	color:darkgreen;

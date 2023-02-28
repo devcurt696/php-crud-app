@@ -18,12 +18,12 @@ if($dimensions[0]>0){
 
 if($dimensions[0]>=$dimensions[1]){
 	
-	$desiredW= 1000;
+	$desiredW= 950;
 	$desiredH= number_format($dimensions[1] /$dimensions[0] *$desiredW,2);
 	}
 	
 	if($dimensions[1]>$dimensions[0]){
-	$desiredH= 1000;
+	$desiredH= 950;
 	$desiredW= number_format($dimensions[0] /$dimensions[1] *$desiredH,2);
 	}
 $dest= imagecreatetruecolor($desiredW, $desiredH);
@@ -51,10 +51,10 @@ imagecopyresampled($dest, $src, 0, 0, 0, 0, $desiredW, $desiredH, $dimensions[0]
 $shortname=substr($originalFile['name'], 0, -4);
 	
 		if (strlen($shortname)>8){
-		$shortname=substr($shortname, 0, 8);
+		$shortname=substr($shortname, 0, 7);
 	}
 
-$timestamp=substr(time(), -4, 4);
+$timestamp=substr(time(), -4, -5);
 		
 $imageNewName = $shortname.$timestamp;
 $imageNewName  = strtolower($imageNewName);
@@ -63,13 +63,15 @@ $imageNewName  = strtolower($imageNewName);
 
 $imageNewName =str_replace(" ", "_",$imageNewName);
 $imageNewName =str_replace(".", "_",$imageNewName);
+$imageNewName = str_replace("#", "_", $imageNewName);
+$imageNewName = str_replace("&", "_", $imageNewName);
 
 $imageNewName=$imageNewName.".jpg";
 
 
 $destURL="item_images/".$imageNewName;
 
-imagejpeg($dest,$destURL, 80);
+imagejpeg($dest,$destURL, 75);
 
 }else{
 $imageNewName="generic.jpg";

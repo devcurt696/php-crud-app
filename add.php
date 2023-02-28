@@ -15,14 +15,15 @@ $item_name = $_POST['item_name'];
 $item_price = $_POST['item_price'];
 $item_brand = $_POST['item_brand'];
 $item_desc = $_POST['item_desc'];
+$item_country = $_POST['item_country'];
 	
 	
 	
 	
 $insertSQL = "INSERT INTO crud_tbl
-(item_name, item_price, item_brand, item_desc ,item_img)
+(item_name, item_price, item_brand, item_desc ,item_img, item_country)
 VALUES
-('$item_name','$item_price','$item_brand','$item_desc','$item_img')";
+('$item_name','$item_price','$item_brand','$item_desc','$item_img','$item_country')";
 $result = $makeconnection->query( $insertSQL );
 
 header ("Location: index.php");
@@ -74,6 +75,10 @@ header ("Location: index.php");
       <td align="right" valign="middle">Item description</td>
 		<td><textarea name="item_desc" id="item_desc" required rows="8" cols="21"></textarea></td>
     </tr>
+                <tr>
+                    <td height="87" align="right" valign="middle">Item Country</td>
+                    <td><input type="text" name="item_country" id="item_country" required></td>
+                </tr>
     <tr>
       <td height="46" align="right" valign="middle">Item image</td>
       <td>
