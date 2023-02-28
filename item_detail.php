@@ -44,8 +44,10 @@ $row = $result->fetch_assoc()
 			<h3 class="item_name">Item name: <?php echo $row["item_name"]; ?></h3>
 			<p class="item_price">Item price: $<?php echo $row["item_price"]; ?></p>
 					<p class="item_brand">Item brand: <?php echo $row["item_brand"]; ?></p>
-					<p class="item_desc">Item description:</p> 
+					<p class="item_desc">Item description:</p>
 			<pre><?php echo $row["item_desc"]; ?></pre>
+                <br/>
+                    <p class="item_country">Item country: <?php echo $row["item_country"]; ?></p>
 		
 				
 

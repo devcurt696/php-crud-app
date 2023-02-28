@@ -16,6 +16,7 @@ $item_name = $_POST['item_name'];
 $item_price = $_POST['item_price'];
 $item_brand = $_POST['item_brand'];
 $item_desc = $_POST['item_desc'];
+$item_country = $_POST['item_country'];
 	
 	if(isset($_POST['item_update_img']) && $_POST['item_update_img']=='yes'){
 $item_img=upload_img();
@@ -25,7 +26,8 @@ $sql_modify = "UPDATE crud_tbl SET
  item_price = '$item_price',
  item_brand = '$item_brand',
  item_desc = '$item_desc',
- item_img='$item_img'
+ item_img='$item_img',
+ item_country = '$item_country'
  
 			  WHERE item_id = '$item_id'";
 			  
@@ -34,7 +36,8 @@ $sql_modify = "UPDATE crud_tbl SET
  item_name = '$item_name',
  item_price = '$item_price',
  item_brand = '$item_brand',
- item_desc = '$item_desc'
+ item_desc = '$item_desc',
+ item_country = '$item_country'
  
  
 			  WHERE item_id = '$item_id'";
@@ -109,6 +112,10 @@ header ("Location: index.php");
       <td align="right" valign="middle">Item description</td>
 		<td><textarea name="item_desc" id="item_desc" required rows="8" cols="21"><?php echo $row["item_desc"]; ?></textarea></td>
     </tr>
+                <tr>
+                    <td height="87" align="right" valign="middle">Item Country</td>
+                    <td><input type="text" name="item_country" id="item_country" required></td>
+                </tr>
     <tr>
       <td height="46" align="right" valign="middle">Item image</td>
       <td>

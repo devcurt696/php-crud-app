@@ -20,19 +20,19 @@ function mark_selected($opt){//when page reloads , user chose different order
 
 
 switch($orderby){
-	case "1":
+	/*case "1":
 		$sql_order='item_id';
-		break;
+		break;*/
 		
-		case "2":
+		case "1":
 		$sql_order='item_name';
 		break;
 		
-		case "3":
+		case "2":
 		$sql_order='item_price ASC';
 		break;
 		
-		case "4":
+		case "3":
 		$sql_order='item_price DESC';
 		break;
 		
@@ -87,11 +87,10 @@ function JS_delete_item(item_id){
 
 		<main>
 			<p>Order by:</p>
-		<select onChange="jumpMenu(this)">
-			<option <?php mark_selected('1'); ?> value="index.php?orderby=1">item id</option>	
-			<option <?php mark_selected('2'); ?> value="index.php?orderby=2" >item name</option>	
-			<option <?php mark_selected('3'); ?>  value="index.php?orderby=3">item Price low to high</option>
-			<option <?php mark_selected('4'); ?>  value="index.php?orderby=4">item Price high to low</option>	
+		<select onChange="jumpMenu(this)">	
+			<option <?php mark_selected('1'); ?> value="index.php?orderby=1" >item name</option>	
+			<option <?php mark_selected('2'); ?>  value="index.php?orderby=2">item Price low to high</option>
+			<option <?php mark_selected('3'); ?>  value="index.php?orderby=3">item Price high to low</option>	
 		</select>
 		<div id="item_catalog">
 			<?php while ($row = $result->fetch_assoc()) { ?>
@@ -101,9 +100,11 @@ function JS_delete_item(item_id){
 				<div class="small_img_holder">
 			<img src="item_images/<?php echo $row["item_img"];?>" alt="<?php echo $row["item_name"]; ?>">
 					</div>
-				<p class="item_id">Item ID: <?php echo $row["item_id"]; ?></p>
+				
 			<h3 class="item_name"><?php echo $row["item_name"]; ?></h3>
 			<p class="item_price">$<?php echo $row["item_price"]; ?></p>
+                <p class="item_country"><?php echo $row["item_country"]; ?></p>
+
 		</a>
 				
 						<p class="modify_link"><a href="modify.php?id=<?php echo $row["item_id"]; ?>">Modify</a></p>
