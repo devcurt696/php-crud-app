@@ -82,6 +82,7 @@ function JS_delete_item(item_id){
 	<div id="container">
 	<header>
 		<h1>Item Catalog</h1>
+        <a href="http://devcurt.com/" target="_blank">Dev Curt Home</a>
 		<p><a href="add.php">Add Item</a></p>
 		</header>
 
