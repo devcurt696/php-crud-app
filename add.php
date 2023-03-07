@@ -49,7 +49,7 @@ header ("Location: index.php");
 	<div id="container">
 	<header>
 		<h1>Item Catalog</h1>
-		<p><a href="index.php">Back to Catalog</a></p>
+		<p><a class="link" href="index.php">Back to Catalog</a></p>
 		</header>
 
 		<main>

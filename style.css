@@ -119,6 +119,7 @@ main a{
 	padding:1%;
 }
 
+
 .item_big .big_info_holder{
 	width:53%;
 	float:left;
@@ -161,6 +162,15 @@ main a{
   word-break:break-all;
 }
 
+
+.link {
+	background-color: blue;
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+	width: 25%;
+	height: 50%;
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 640px) {
 	
