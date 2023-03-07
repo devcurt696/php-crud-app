@@ -112,10 +112,10 @@ header ("Location: index.php");
       <td align="right" valign="middle">Item description</td>
 		<td><textarea name="item_desc" id="item_desc" required rows="8" cols="21"><?php echo $row["item_desc"]; ?></textarea></td>
     </tr>
-                <tr>
-                    <td height="87" align="right" valign="middle">Item Country</td>
-                    <td><input type="text" name="item_country" id="item_country" required></td>
-                </tr>
+    <tr>
+       <td height="87" align="right" valign="middle">Item Country</td>
+       <td><input type="text" name="item_country" id="item_country" value="<?php echo $row["item_country"]; ?>" required></td>
+    </tr>
     <tr>
       <td height="46" align="right" valign="middle">Item image</td>
       <td>
