@@ -103,7 +103,7 @@ function JS_delete_item(item_id){
 				
 			<h3 class="item_name"><?php echo $row["item_name"]; ?></h3>
 			<p class="item_price">$<?php echo $row["item_price"]; ?></p>
-                <p class="item_country">Country: <?php echo $row["item_country"]; ?></p>
+            <p class="item_country">Country: <?php echo $row["item_country"]; ?></p>
 
 		</a>
 				

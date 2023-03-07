@@ -36,20 +36,19 @@ $row = $result->fetch_assoc()
 		<div class="item_big">
 			
 				<div class="big_img_holder">
-			<img src="item_images/<?php echo $row["item_img"];?>" alt="<?php echo $row["item_name"]; ?>">
-					</div>
+					<img src="item_images/<?php echo $row["item_img"];?>" alt="<?php echo $row["item_name"]; ?>">
+				</div>
 			
 				<div class="big_info_holder">
-				<p class="item_id">Item ID: <?php echo $row["item_id"]; ?></p>
-			<h3 class="item_name">Item name: <?php echo $row["item_name"]; ?></h3>
-			<p class="item_price">Item price: $<?php echo $row["item_price"]; ?></p>
+					
+					<p class="item_id">Item ID: <?php echo $row["item_id"]; ?></p>
+					<h3 class="item_name">Item name: <?php echo $row["item_name"]; ?></h3>
+					<p class="item_price">Item price: $<?php echo $row["item_price"]; ?></p>
 					<p class="item_brand">Item brand: <?php echo $row["item_brand"]; ?></p>
 					<p class="item_desc">Item description:</p>
-			<pre><?php echo $row["item_desc"]; ?></pre>
-                <br/>
-                    <p class="item_country">Item country: <?php echo $row["item_country"]; ?></p>
-		
-				
+					<pre><?php echo $row["item_desc"]; ?></pre>
+                	<br/>
+                	<p class="item_country">Item country: <?php echo $row["item_country"]; ?></p>
 
 				</div>
 				<!--end item info-->

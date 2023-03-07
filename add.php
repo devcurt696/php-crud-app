@@ -58,38 +58,38 @@ header ("Location: index.php");
 			<table width="100%" border="0"  cellspacing="10">
 				<tr>
 				<td colspan="2" align="center"> <h2>Add item</h2></td>
-			  </tr>
-    <tr>
-      <td width="40%" height="74" align="right" valign="middle">Item name</td>
-      <td><input type="text" name="item_name" id="item_name" required></td>
-    </tr>
-    <tr>
-      <td height="73" align="right" valign="middle">Item Price $</td>
-       <td><input type="number" step="0.01" name="item_price" id="item_price" required></td>
-    </tr>
-    <tr>
-      <td height="87" align="right" valign="middle">Item Brand</td>
-          <td><input type="text" name="item_brand" id="item_brand" required></td>
-    </tr>
-    <tr>
-      <td align="right" valign="middle">Item description</td>
-		<td><textarea name="item_desc" id="item_desc" required rows="8" cols="21"></textarea></td>
-    </tr>
-                <tr>
-                    <td height="87" align="right" valign="middle">Item Country</td>
-                    <td><input type="text" name="item_country" id="item_country" required></td>
-                </tr>
-    <tr>
-      <td height="46" align="right" valign="middle">Item image</td>
-      <td>
-       <input type="file" name="item_img" id="item_img" required></td>
-    </tr>
-    <tr>
-      <td align="right" valign="middle">&nbsp;</td>
-      <td><input type="submit" name="submit" id="submit" value="Submit"></td>
-    </tr>
+			  	</tr>
+				<tr>
+				  <td width="40%" height="74" align="right" valign="middle">Item name</td>
+				  <td><input type="text" name="item_name" id="item_name" required></td>
+				</tr>
+				<tr>
+				  <td height="73" align="right" valign="middle">Item Price $</td>
+				   <td><input type="number" step="0.01" name="item_price" id="item_price" required></td>
+				</tr>
+				<tr>
+				  <td height="87" align="right" valign="middle">Item Brand</td>
+					  <td><input type="text" name="item_brand" id="item_brand" required></td>
+				</tr>
+				<tr>
+				  <td align="right" valign="middle">Item description</td>
+					<td><textarea name="item_desc" id="item_desc" required rows="8" cols="21"></textarea></td>
+				</tr>
+				<tr>
+				   <td height="87" align="right" valign="middle">Item Country</td>
+				   <td><input type="text" name="item_country" id="item_country" required></td>
+				</tr>
+				<tr>
+				  <td height="46" align="right" valign="middle">Item image</td>
+				  <td>
+				   <input type="file" name="item_img" id="item_img" required></td>
+				</tr>
+				<tr>
+				  <td align="right" valign="middle">&nbsp;</td>
+				  <td><input type="submit" name="submit" id="submit" value="Submit"></td>
+				</tr>
 
-</table>
+			</table>
 		
 	</form>	
 		  <script>
