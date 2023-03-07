@@ -15,6 +15,7 @@ body {
 	font-weight: 400;
 	font-size: 100%;
 	min-height: 100vh;
+	background-color: aqua;
 }
 #container {
 	max-width: 1200px;
@@ -166,10 +167,11 @@ main a{
 .link {
 	background-color: blue;
 	color: white;
-	border-radius: 20px;
+	border-radius: 8px;
 	text-decoration: none;
 	width: 25%;
 	height: 50%;
+	padding: 7px;
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 640px) {
